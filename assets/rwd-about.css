@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/*
+ * File       : rwd-about.css
+ * Author     : STUDIO-JT (HEE)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1480px
+ * **************************************** */
+@media (max-width: 1480px){
+
+	.page-template-about .article-header__visual {height: calc(100vh + 300rem); height: -webkit-calc(100vh + 300rem);}
+	.page-template-about #article-header__visual-desc-wrap { padding-top:40rem; margin-top: -webkit-calc(100vh - 40rem); margin-top: calc(100vh - 40rem); }
+
+	.about-section__title {font-size: 40rem;}
+
+	.about-intro {padding: 160rem 0;}
+	.about-intro__content-subtitle {font-size: 19rem;}
+	.about-intro__content-title {font-size: 32rem;}
+	.about-intro__content-desc {font-size: 17rem; margin-top: 28rem;}
+	
+	.about-culture {padding: 160rem 0;}
+	.about-culture__subtitle {font-size: 19rem;}
+	.about-culture__title {font-size: 32rem;}
+	.about-culture__content {margin-top: 24rem; padding-top: 28rem;}
+	.about-culture__content > li {font-size: 17rem;}
+
+	.about-history {padding: 160rem 0;}
+	.about-history__list {margin-top: 100rem;}
+	.about-history__item > h3 {font-size: 64rem;}
+	.about-history__item > ul li {font-size: 21rem;}
+	.about-history__typo {font-size: 48rem;}
+
+	.about-location {padding-top: 160rem;}
+	.about-location__info-addr > p {font-size: 21rem;}
+	.about-location__info-item > p {font-size: 21rem;}
+	.about-location__info-item > ul li {font-size: 21rem;}
+	.about-location__info-item > ul li span:after {right: 16rem;}
+	.about-location__map {height: 640rem;}
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media (max-width: 1023px){
+
+	.page-template-about .article-header__visual-title {bottom: 130rem; }
+
+	.about-section__title {font-size: 36rem;}
+
+	.about-intro {padding: 120rem 0;}
+	.about-intro__item {margin-top: 160rem;}
+	.about-intro__content-subtitle {font-size: 17rem;}
+	.about-intro__content-title {font-size: 28rem; margin-top: 9rem;}
+	.about-intro__content-desc {font-size: 16rem; margin-top: 24rem;}
+	
+	.about-culture {padding: 120rem 0;}
+	.about-culture__list {margin-top: 100rem;}
+	.about-culture__item {margin-bottom: 100rem;}
+	.about-culture__title {font-size: 28rem;}
+	.about-culture__subtitle {font-size: 17rem; margin-top: 8rem;}
+	.about-culture__content {margin-top: 20rem; padding-top: 24rem;}
+	.about-culture__content > li {font-size: 16rem; margin-bottom: 10rem;}
+	.about-culture__content > li:before {top: 9rem;}
+
+	.about-history {padding: 120rem 0;}
+	.about-history__list {margin-top: 80rem;}
+	.about-history__item > h3 {font-size: 56rem;}
+	.about-history__item > h3 {width: 40%; margin-right: 0; }
+	.about-history__item > ul {width: 60%;}
+	.about-history__item > ul li {font-size: 20rem;}
+	.about-history__typo {font-size: 42rem;}
+
+	.about-location {padding-top: 120rem;}
+	.about-location__info {margin-top: 80rem;}
+	.about-location__info-addr > b {font-size: 15rem;}
+	.about-location__info-addr > p {font-size: 20rem;}
+	.about-location__info-addr > span {font-size: 16rem;}
+	.about-location__info-item > b {font-size: 15rem;}
+	.about-location__info-item > p {font-size: 20rem;}
+	.about-location__info-item > ul li {font-size: 20rem;}
+	.about-location__info-item > ul li span {width: 100rem;}
+	.about-location__info-item > ul li span:after {height: 16rem; top: 6rem;}
+	.about-location__info-item > ul li a {width: -webkit-calc(100% - 100rem); width: calc(100% - 100rem);}
+	.about-location__map {margin-top: 100rem; height: 500rem;}
+}
+
+
+
+/* **************************************** *
+ * 860px
+ * **************************************** */
+@media (max-width: 860px){
+	.page-template-about .article-header__visual {height: -webkit-calc(100vh + 280rem);height: calc(100vh + 280rem);}
+	.page-template-about .article-header__visual-bg {background-position: 59% 50%;}
+	.page-template-about .article-header__visual-desc + .article-header__visual-desc {margin-top: 20rem;}
+
+	.about-section__title {font-size: 30rem;}
+
+	.about-intro {padding: 100rem 0;}
+	.about-intro__list {margin-top: 72rem;}
+	.about-intro__item {margin-top: 100rem; display: block;}
+	.about-intro__img-wrap {width: 100%;}
+	.about-intro__content {width: 100%;padding-top: 38rem;}
+	.about-intro__content-subtitle {font-size: 16rem; font-weight: 600;}
+	.about-intro__content-title {font-size: 26rem; margin-top: 8rem;}
+	.about-intro__content-desc {font-size: 15rem; font-weight: 400; margin-top: 21rem;}
+	.ios .about-intro__content-desc {margin-top: 19rem;}
+
+	.about-culture {padding: 100rem 0;}
+	.about-culture__list {margin-top: 80rem;}
+	.about-culture__item {margin-bottom: 80rem;}
+	.about-culture__title {font-size: 26rem;}
+	.about-culture__subtitle {font-size: 16rem; font-weight: 600; margin-top: 6rem;}
+	.about-culture__content {margin-top: 16rem; padding-top: 22rem;}
+	.about-culture__content > li {font-size: 15rem; font-weight: 400; margin-bottom: 8rem; padding-left: 12rem;}
+	.about-culture__content > li:before {width: 3rem; height: 3rem; top: 9rem;}
+	.ios .about-culture__content > li:before {top: 8rem;}
+
+	.about-history {padding: 100rem 0;}
+	.about-history__list {margin-top: 60rem;}
+	.about-history__item {padding: 60rem 0;}
+	.about-history__item > h3 {font-size: 42rem; font-family: 'Pretendard', sans-serif; }
+	.about-history__item > ul li {font-size: 16rem; padding-left: 60rem; font-weight: 400;}
+	.about-history__typo {font-size: 30rem; width: auto; left: 40%; margin-top: 100rem;}
+
+	.about-location {padding-top: 100rem;}
+	.about-location__info {margin-top: 70rem;}
+	.about-location__info-addr { display: block; width: 100%; }
+	.about-location__info-addr > b {font-size: 14rem;}
+	.about-location__info-addr > p {font-size: 16rem;}
+	.about-location__info-addr > span {font-size: 15rem;}
+	.about-location__info-addr > .jt-btn__icon {margin-top: 30rem;}
+	.about-location__info-contact { display: block; width: 100%; margin-top: 50rem; }
+	.about-location__info-item {margin-top: 50rem;}
+	.about-location__info-item > b {font-size: 14rem;}
+	.about-location__info-item > p {font-size: 16rem;}
+	.about-location__info-item > ul li {font-size: 16rem;}
+	.about-location__info-item > ul li span {width: 90rem; padding-right: 26rem;}
+	.about-location__info-item > ul li span:after {height: 13rem; right: 13rem;}
+	.about-location__info-item > ul li a {width: -webkit-calc(100% - 90rem); width: calc(100% - 90rem);}
+	.ios .about-location__info-item > ul li span {width: 83rem;}
+	.ios .about-location__info-item > ul li span:after {top: 4rem;}
+	.about-location__map {margin-top: 80rem; height: 450rem;}
+}
+
+
+
+/* **************************************** *
+ * 540px
+ * **************************************** */
+@media (max-width: 540px){
+
+	.article--career {overflow-x: hidden;}
+	.page-template-about .article-header__visual {height: -webkit-calc(100vh + 320rem); height: calc(100vh + 320rem);}
+	.page-template-about .article-header__visual-title {max-width: -webkit-calc(100% - 48rem);max-width: calc(100% - 48rem);}
+	.page-template-about .article-header__visual-title br {display: none;}
+
+	.about-section__title {font-size: 24rem;}
+	.about-section__title br { display: none; }
+
+	.about-intro {padding: 80rem 0;}
+	.about-intro .about-section__title br {display: block;}
+	.about-intro__list {margin-top: 40rem;}
+	.about-intro__item {margin-top: 60rem;}
+	.about-intro__content {padding-top: 28rem;}
+	.about-intro__content-subtitle {font-size: 14rem;}
+	.about-intro__content-title {font-size: 22rem;}
+	.about-intro__content-desc {font-size: 14rem; margin-top: 15rem;}
+	.ios .about-intro__content-desc {margin-top: 13rem;}
+	.about-intro__content-desc br {display: none;}
+	
+	.about-culture {padding: 80rem 0;}
+	.about-culture .about-section__title br {display: block;}
+	.about-culture__list {margin-top: 60rem;}
+	.about-culture__item {display: block; width: 100%; margin-right: 0; margin-bottom: 60rem;}
+	.about-culture__item:nth-last-child(2) {margin-bottom: 60rem;}
+	.about-culture__title {font-size: 22rem;}
+	.about-culture__subtitle {font-size: 14rem;}
+	.about-culture__content {margin-top: 14rem; padding-top: 20rem;}
+	.about-culture__content > li {font-size: 14rem; margin-bottom: 6rem;}
+
+	.about-history {padding: 80rem 0;}
+	.about-history__list {margin-top: 40rem;}
+	.about-history__item {padding: 36rem 0 40rem;}
+	.about-history__item > h3 {display: block; width: 100%; font-size: 36rem;}
+	.about-history__item > ul {display: block; width: 100%; margin-top: 30rem;}
+	.about-history__item > ul li {font-size: 15rem;margin-top: 22rem;padding-left: 30rem;}
+	.about-history__item > ul li p + p { margin-top: 12rem; }
+	.about-history__typo { font-size: 26rem; width: auto; left: 0; margin-left: 0; margin-top: 80rem;}
+
+	.about-location {padding-top: 80rem;}
+	.about-location__info {margin-top: 40rem;}
+	.about-location__info-addr > b {font-size: 12rem;}
+	.about-location__info-addr > p {font-size: 15rem;}
+	.about-location__info-addr > span {font-size: 13rem; margin-top: 2rem;}
+	.about-location__info-addr > .jt-btn__icon {margin-top: 22rem;}
+	.about-location__info-contact {margin-top: 30rem;}
+	.about-location__info-item {margin-top: 30rem;}
+	.about-location__info-item:first-child {width: 50%; }
+	.about-location__info-item:nth-child(2) {width: 50%;}
+	.about-location__info-item > b {font-size: 12rem;}
+	.about-location__info-item > p {font-size: 15rem;}
+	.about-location__info-item > ul li {font-size: 15rem;}
+	.about-location__info-item > ul li span {width: 80rem; padding-right: 22rem;}
+	.about-location__info-item > ul li span:after {height: 12rem; top: 4rem; right: 10rem;}
+	.about-location__info-item > ul li a {width: -webkit-calc(100% - 80rem); width: calc(100% - 80rem);}
+	.about-location__map {margin-top:50rem; height: 300rem;}
+	.android .about-location__info-item > ul li span:after {top: 5rem; right: 12rem;}
+	.ios .about-location__info-item > ul li span {width: 76rem;}
+	.ios .about-location__info-item > ul li span:after {top: 4rem; right: 12rem;}
+	.ios .about-location__info-item > ul li a {width: -webkit-calc(100% - 76rem); width: calc(100% - 76rem);}
+}
+
+
+
+/* **************************************** *
+ * MIN-HEIGHT 980px
+ * **************************************** */
+@media (min-height: 980px){
+	html.desktop .page-template-about .article-header__visual {height: 1540rem;}
+}

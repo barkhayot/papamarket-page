@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*
+ * File       : modules/notice/style.css
+ * Author     : STUDIO-JT (CHAEHEE)
+ * Guideline  : JTstyle.1.1
+ *
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) JT NOTICE LIST
+ * 2) RWD
+ */
+
+
+
+/* **************************************** *
+ * JT NOTICE LIST
+ * **************************************** */
+.jt-notice-list-wrap {position: relative;}
+.jt-notice-list {width: 100%;table-layout: fixed;position: relative;border-top: 2rem solid #ddd; min-width: 100%; max-width: none; /* width: auto; */}
+.jt-notice-list caption {width: 1rem;height: 1rem;position: absolute;top: 0;left: 0;font-size: 0;line-height: 0;overflow: hidden;}
+.jt-notice-list tr {width: 100%;}
+.jt-notice-list thead {font-size: 0; opacity: 0; visibility: hidden;}
+.jt-notice-list th { font-size: 0; padding: 0; width: 0;}
+.jt-notice-list td {padding: 18rem 0;font-size: 26rem;font-weight: 500; text-align: center;color: #000;vertical-align: middle;border-bottom: 1rem solid #ddd;cursor: pointer;-webkit-transition: background 300ms;-o-transition: background 300ms;transition: background 300ms;}
+.jt-notice-list td a {color: inherit;}
+.jt-notice-list .jt-notice-list__ellipsis {width: auto;overflow: hidden;-o-text-overflow: ellipsis;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;}
+.jt-notice-list .jt-notice-list__ellipsis * {vertical-align: middle;}
+.jt-notice-list .jt-notice-list__symbol {display: inline-block;width: 60rem;height: 40rem;font-size: 18rem; font-weight: 700; padding: 9rem 0 7rem; color: #fff;border-radius: 0;background: #000; border: 1rem solid #000;}
+html.desktop .jt-notice-list tr:hover td:not(.jt-notice-list--nothing) {background: #f8f8f8;}
+
+.jt-notice-list .jt-notice-list__num {width: 128rem;}
+.jt-notice-list .jt-notice-list__title {width: auto;}
+.jt-notice-list .jt-notice-list__attachment {width: 90rem;}
+.jt-notice-list .jt-notice-list__date { width: 128rem; }
+
+.jt-notice-list .jt-notice-list__attachment {height: 100%;}
+.jt-notice-list .jt-notice-list__attachment-download {position: relative; display: block; width: 100%; height: 100%; font-size: 0;}
+.jt-notice-list .jt-notice-list__attachment-download:after {content: '\e94c'; font-family: 'jt-font'; font-size: 14rem; color: #000;}
+.jt-notice-list .jt-notice-list__date {text-align: left; margin-top: 7rem;}
+.jt-notice-list .jt-notice-list__date time {display: block; font-size: 16rem; color: #999; }
+.jt-notice-list td.jt-notice-list__num {font-size: 16rem; color: #bbb;}
+.jt-notice-list td.jt-notice-list__title {padding: 52rem 28rem 55rem 0; text-align: left;}
+
+.jt-notice-list td.jt-notice-list--nothing {padding: 143rem 0;cursor: default; width: 100%;word-break: break-all;}
+.jt-notice-list td.jt-notice-list--nothing b {display: block; font-size: 26rem; font-weight: 500; line-height: 1.4; margin-bottom: 15rem;}
+.jt-notice-list td.jt-notice-list--nothing p {display: block; font-size: 18rem; font-weight: 300; line-height: 1.56;}
+
+
+
+/* **************************************** *
+ * RWD
+ * **************************************** */
+@media (max-width: 1480px){
+
+	.jt-notice-list td {font-size: 24rem;}
+}
+
+@media (max-width: 1023px){
+
+	.jt-notice-list td {padding: 30rem 0; font-size: 20rem;}
+	.jt-notice-list td.jt-notice-list__title {padding: 30rem 0;}
+
+}
+
+@media (max-width: 860px){
+
+    .jt-notice-list td {padding: 24rem 0; font-size: 16rem;}
+	.jt-notice-list td.jt-notice-list__title {padding: 22rem 0;}
+    .jt-notice-list .jt-notice-list__symbol {width: 40rem;height: 25rem;font-size: 12rem;line-height: 24rem; padding: 0;}
+    .jt-notice-list .jt-notice-list__num {width: 90rem;}
+	.jt-notice-list .jt-notice-list__num span:not(.jt-notice-list__symbol) {font-size: 14rem;}
+    .jt-notice-list .jt-notice-list__date {width: 102rem;}
+	.jt-notice-list .jt-notice-list__date time {font-size: 13rem;}
+
+    .jt-notice-list .jt-notice-list__author {display: none;}
+    .jt-notice-list .jt-notice-list__ellipsis a {color: #000;}
+    html.desktop .jt-notice-list tr:hover td {background: transparent;}
+
+	.jt-notice-list td.jt-notice-list--nothing {padding: 15% 30rem;}
+	.jt-notice-list td.jt-notice-list--nothing b {font-size: 20rem; margin-bottom: 10rem;}
+	.jt-notice-list td.jt-notice-list--nothing p {font-size: 14rem;}
+
+    .single-notice .main-container {padding-bottom: 0;}
+	.single-notice .article-header {display: none;}
+
+}
+
+@media (max-width: 540px){
+
+	.jt-notice-list { display: block; }
+	.jt-notice-list thead { display: none; }
+	.jt-notice-list tbody { display: block; width: 100%; }
+	.jt-notice-list tr { display: block; border-bottom: 1rem solid rgba(0,0,0,0.15); padding: 20rem 0 20rem; font-size: 0; }
+	.jt-notice-list td { display: inline-block; border-bottom: 0; font-size: 15rem;}
+	.jt-notice-list td.jt-notice-list__title { padding: 0; max-width: -webkit-calc(100% - 30rem); max-width: calc(100% - 30rem); }
+	.jt-notice-list .jt-notice-list__num {padding: 0;width: auto;display: none;}
+	.jt-notice-list .jt-notice-list__symbol {position: relative; top: 2rem;}
+	.jt-notice-list .jt-notice-list__attachment { width: 30rem; padding: 0; position: relative; top: 1rem;}
+	.jt-notice-list .jt-notice-list__date { width: auto; padding: 0; display: block; margin-top: 6rem; }
+	html.ios .jt-notice-list .jt-notice-list__symbol {top: 0; padding-top: 1rem;}
+	html.ios .jt-notice-list .jt-notice-list__attachment { top: -1rem;}
+
+	.jt-notice-list .jt-notice-list--notice td.jt-notice-list__title {max-width: -webkit-calc(100% - 80rem);max-width: calc(100% - 80rem);}
+	.jt-notice-list .jt-notice-list--notice .jt-notice-list__num { display: inline-block; margin-right: 10rem; }
+
+	.jt-notice-list td.jt-notice-list--nothing {padding: 15% 15rem;}
+	.jt-notice-list td.jt-notice-list--nothing b {font-size: 18rem; }
+
+}

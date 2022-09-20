@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ * Font         : Pretendard, jt-font
+ */
+
+
+
+/* ************************************** *
+ * Pretendard
+ * ************************************** */
+/* Regular */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	src: url('../fonts/pretendard/woff2-subset/Pretendard-Regular.subset.woff2') format('woff2'),
+         url('../fonts/pretendard/woff-subset/Pretendard-Regular.subset.woff') format('woff');
+}
+
+/* Medium, SemiBold */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	src: url('../fonts/pretendard/woff2-subset/Pretendard-SemiBold.subset.woff2') format('woff2'),
+         url('../fonts/pretendard/woff-subset/Pretendard-SemiBold.subset.woff') format('woff');
+}
+
+/* Bold */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	src: url('../fonts/pretendard/woff2-subset/Pretendard-Bold.subset.woff2') format('woff2'),
+         url('../fonts/pretendard/woff-subset/Pretendard-Bold.subset.woff') format('woff');
+}
+
+
+
+/* ************************************** *
+ * JT-FONT
+ * ************************************** */
+@font-face {
+    font-family:'jt-font';
+    font-style: normal;
+    font-display: block;
+    font-weight: normal;
+    src: url(../fonts/jt-font-v2/fonts/jt-font.eot);
+    src: local("?"),
+         url(../fonts/jt-font-v2/fonts/jt-font.woff) format('woff');
+}

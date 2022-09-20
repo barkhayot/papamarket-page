@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/*
+ * File       : modules/faq/style.css
+ * Author     : STUDIO-JT (KMS,NICO)
+ * Guideline  : JTstyle.1.1
+ *
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) JT ACCORDION LIST
+ * 2) RWD
+ */
+
+
+
+/* **************************************** *
+ * JT ACCORDION LIST
+ * **************************************** */
+.jt-accordion {width: 100%;position: relative;border-top: 2rem solid #000;}
+
+.jt-accordion__title {padding: 41rem 0 39rem;position: relative;border-bottom: 1rem solid #ddd;cursor: pointer;}
+.jt-accordion__state {width: 30rem;height: 30rem;position: absolute;left: 34rem;top: 50%;margin-top: -15rem;}
+.jt-accordion__state span {display: block;font-size: 22rem;font-weight: 700; line-height: 1.46; text-align: center;color: #000;}
+.jt-accordion__questions {width: 100%;padding-left: 97rem;padding-right: 70rem;}
+.jt-accordion__questions p {font-size: 22rem;font-weight: 500;line-height: 1.46;color: #000;}
+.jt-accordion__control {width: 26rem;height: 26rem;position: absolute;right: 36rem;top: 50%;margin-top: -13rem;}
+.jt-accordion__control:after {display: block;width: 100%;height: 100%;position: absolute;top: 0;left: 0;font-family: 'jt-font';content: '\e911';font-size: 16rem;font-style: normal;line-height: 26rem;text-align: center;color: #ddd;-webkit-transition: color 300ms, -webkit-transform 300ms;transition: color 300ms, -webkit-transform 300ms;transition: color 300ms, transform 300ms;transition: color 300ms, transform 300ms, -webkit-transform 300ms;}
+html.desktop .jt-accordion__title:hover .jt-accordion__control:after, .jt-accordion__title.jt-accordion--active .jt-accordion__control:after {color: #000;}
+.jt-accordion__title.jt-accordion--active .jt-accordion__control:after {-webkit-transform: rotate(-180deg);-ms-transform: rotate(-180deg);transform: rotate(-180deg);}
+
+.jt-accordion__content {position: relative;background: #f4f4f4;overflow: hidden;}
+.jt-accordion__content-inner {padding: 41rem 97rem 59rem;font-size: 16rem;font-weight: 300;line-height: 1.63;color: #000; word-break: break-all;}
+.jt-accordion__content-inner a {display: inline-block; position: relative; color: inherit; -webkit-transition: color .3s; transition: color .3s;}
+.jt-accordion__content-inner a:after { content: ''; display: block; width: 100%; height: 1px; background: #000; position: absolute; bottom: 3rem; left: 0; -webit-transition: background .3s; transition: background .3s; }
+html.desktop .jt-accordion__content-inner a:hover {color: #00E600;}
+html.desktop .jt-accordion__content-inner a:hover:after { background: #00E600; }
+.jt-accordion .jt-accordion__content.jt-accordion--active > .jt-accordion__content-inner {border-bottom: 1rem solid #ddd;}
+
+.jt-accordion .jt-accordion__title:not(:first-child) + .jt-accordion__content .jt-accordion__content-inner {display: none;}
+
+
+
+/* **************************************** *
+ * RWD
+ * **************************************** */
+@media (max-width: 1023px){
+	.jt-accordion__title { padding: 36rem 0 32rem; }
+	.jt-accordion__state { left: 26rem; margin-top: -13rem; }
+	.jt-accordion__state span { font-size: 20rem; }
+	.jt-accordion__questions { padding-left: 80rem; }
+	.jt-accordion__questions p { font-size: 20rem; }
+	.jt-accordion__control { right: 24rem; }
+	.jt-accordion__content-inner { padding: 36rem 80rem;}
+}
+
+@media (max-width: 860px){
+    .jt-accordion__title {padding: 31rem 0 29rem;}
+    .jt-accordion__questions {padding-left: 50rem;padding-right: 50rem;}
+    .jt-accordion__questions p {font-size: 16rem;}
+    .jt-accordion__state {width: 24rem;height: 24rem;left: 13rem; margin-top: -12rem;}
+    .jt-accordion__state span {font-size: 16rem;}
+    .jt-accordion__control {right: 10rem;}
+    .jt-accordion__control:after {font-size: 11rem;}
+    .jt-accordion__content-inner {padding: 22rem 24rem;font-size: 14rem;}
+}
+
+@media (max-width: 540px){
+    .jt-accordion__title {padding: 20rem 0 18rem;}
+    .jt-accordion__questions {padding-left: 0; padding-right: 34rem;}
+	.jt-accordion__questions p {font-size: 14rem;}
+    .jt-accordion__state {display: none;}
+    .jt-accordion__control {right: 0;}
+    .jt-accordion__content-inner {padding: 18rem 20rem; font-size: 13rem;}
+}

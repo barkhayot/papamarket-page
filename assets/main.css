@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/*
+ * File       : main.css
+ * Author     : STUDIO-JT (HEE)
+ * Guideline  : JTstyle.1.1
+ *
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) COMMON
+ */
+
+
+
+/* **************************************** *
+ * COMMON
+ * **************************************** */
+body.home .main-container {padding-top: 0;}
+
+.main-section {position: relative; width: 100%; background: #fff; z-index: 1; /*overflow-x: hidden;*/}
+.main-section__bg {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-repeat: no-repeat;background-position: center;background-size: cover;}
+.main-section__bg-overlay {position: absolute; top: -100%; left: 0; width: 100%; height: 200%; background: #000; opacity: 0;}
+.main-section__inner {position:relative; width: 100%; height: 100vh;}
+.main-section__content {position: relative; display: table; width: 100%; height: 100%; z-index: 1;}
+.main-section__content-inner {display: table-cell; vertical-align: middle;}
+.main-section__title { font-size: 56rem; font-weight: 700; line-height: 1.29; }
+.main-section__desc { font-size: 26rem; font-weight: 500; line-height: 1.46; margin-top: 30rem;}
+.main-section__btn-wrap {font-size: 0; margin-left: -5rem; margin-right: -5rem;}
+.main-section__btn {display: inline-block; vertical-align: top; margin: 0 5rem; margin-top: 60rem;}
+
+
+
+/* **************************************** *
+ * VISUAL
+ * **************************************** */
+.main-visual {-webkit-mask-image: -webkit-radial-gradient(white, black);}
+.main-visual__bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.main-visual__bg .jt-fullvid-container {background: #000;}
+.main-visual__content {width: 100%;height: 100%;display: table;z-index: 1;position: relative;}
+.main-visual__content-inner { display: table-cell; vertical-align: middle; padding-top: 50rem; text-align: right; }
+.main-visual__title {display: inline-block;padding-top: 20rem;position: relative;font-size: 72rem;font-weight: 700;line-height: 1.23;color: #fff; text-align: left;}
+
+.jt-vid-popup-btn {display: none; margin-top: 19rem; opacity: 0; visibility: hidden;}
+.jt-vid-popup-btn--show {opacity: 1; visibility: visible;}
+
+
+
+/* **************************************** *
+ * APP
+ * **************************************** */
+.main-app {background: #f2f2f2;}
+.main-app .main-section__inner {height: auto; padding: 290rem 0; overflow: hidden;}
+.main-app .main-section__bg { position: absolute; top: auto; left: auto; bottom: -1rem; right: 0; font-size: 0; width: 918rem; height: 918rem;}
+.main-app .main-section__bg .jt-fullvid-container:after {opacity: 0;}
+
+html.ie11 .main-app .main-section__bg .jt-fullvid-container::before{position: absolute; content: ''; background: #f1f1f1; height: 5rem; width: 100%; top: 0; left: 0; z-index: 1}
+.main-app .main-section__btn-wrap { margin-top: 60rem; }
+.main-app .main-section__btn { margin-top: 0; }
+.main-app .main-section__desc span {color: #00E600;}
+
+
+
+/* **************************************** *
+ * COMPANY
+ * **************************************** */
+.main-company {background: #000; color: #fff;}
+.main-company .wrap {position: relative;}
+.main-company .main-section__inner {height: auto;}
+.main-company .main-section__content {z-index: 3;}
+.main-company .main-section__content-inner {padding: 140rem 0 330rem;}
+.main-company__head {position: absolute; top: 0; left: 0; padding-top: 150rem; width: 50%;}
+.main-company__amount {position: relative; left: 50%; margin-left: 240rem; padding-top: 163rem; display: inline-block;}
+.main-company__amount-item {display: block; width: auto; margin-bottom: 160rem;}
+.main-company__amount-item:last-child {margin-bottom: 0}
+.main-company__amount-num {display: block; font-size: 0; margin-left: -5rem;}
+.main-company__amount-num b {position:relative; display: inline-block; vertical-align: top;font-style: normal;font-size: 110rem; font-weight: 700; line-height: 1; height: 1em; -webkit-font-feature-settings: 'tnum'; -moz-font-feature-settings: 'tnum'; font-feature-settings: 'tnum';}
+.main-company__amount-num b > span {display: inline-block; vertical-align: top; overflow: hidden; height: 100%;}
+.main-company__amount-num b > span > span {display: block;position: relative;top: 0;text-align: center;}
+.main-company__amount-num > span {display: inline-block; vertical-align: top; font-size: 95rem; margin-top: 0; -webkit-font-feature-settings: 'case'; -moz-font-feature-settings: 'case'; font-feature-settings: 'case';}
+.main-company__amount-item > p {font-size: 26rem; font-weight: 500; line-height: 1.47; margin-top: 18rem; }
+.main-company__amount-item > span {display: block; font-size: 18rem; font-weight: 500; line-height: 1.56; margin-top: 10rem;}
+
+.main-company .main-section__bg-overlay {top: 0; height: 100%; z-index: 2;}
+
+
+
+/* **************************************** *
+ * BUSINESS
+ * **************************************** */
+.main-business {background: #000; color: #fff;}
+/* .main-business__head-inner {padding: 170rem 0 269rem;} */
+.main-business__list { position: relative; width: 100%; z-index: 2; }
+.main-business__list-item { position: relative; display: table; width: 100%; height: 100vh; }
+.main-business__list-content { position: relative; display: table-cell; vertical-align: middle; }
+.main-business__list-title { font-size: 62rem; font-weight: 700; line-height: 1.23; }
+.main-business__list-desc { font-size: 26rem; font-weight: 300; line-height: 1.39; margin-top: 30rem;}
+
+.main-business__picture {width: 100%;height: 100vh;position: absolute;top: 0;left: 0;z-index: 1;}
+.main-business__picture:after {content: '';display: block;width: 50%;height: 100%;position: absolute;top: 0;left: 0;background: -webkit-gradient(linear, left top, right top, from(#000000), to(#000000));background: -webkit-linear-gradient(left, #000000, #000000);background: linear-gradient(90deg, #000000, #000000);background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .3)), to(rgba(0, 0, 0, 0)));background: -webkit-linear-gradient(left, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));background: linear-gradient(90deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0));z-index: 99;}
+.main-business__picture.js-pin-fixed {position: fixed;}
+.main-business__picture.js-pin-clear {position: absolute;top: inherit;bottom: 0;}
+.main-business__picture-item {width: 100%;height: 100%;position: absolute;top: 0;left: 0;overflow: hidden;}
+.main-business__picture-item > span {display: block;width: 100%;height: 100%;background: no-repeat center center;background-size: cover;}
+
+
+
+/* **************************************** *
+ * CULTURE
+ * **************************************** */
+.main-culture-recruit {background: transparent; overflow: hidden; z-index: 0;}
+.main-culture-recruit .main-section__bg {position:fixed; top: 0; left: 0;background-image: url(https://cdn.zeplin.io/62de4d0629e444128e2fd254/assets/2adad355-8bb2-4601-b786-fa2a33daa032.png); background-attachment: fixed; -webkit-transform-origin: center; -ms-transform-origin: center; transform-origin: center;/* display: none;*/}
+.main-culture-recruit .main-section__bg:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: .5;}
+.main-culture {background: transparent;color: #fff;}
+
+html.ie11 .main-culture-recruit .main-section__bg{ background-attachment: inherit}
+.ios .main-culture-recruit .main-section__bg{ background-attachment: inherit}
+
+
+
+/* **************************************** *
+ * RECRUIT
+ * **************************************** */
+.main-recruit {background: transparent; color: #fff; overflow: visible;}
+.main-recruit--temporary {background: #000; color: #fff;}

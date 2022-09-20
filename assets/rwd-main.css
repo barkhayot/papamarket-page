@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/*
+ * File       : rwd-main.css
+ * Author     : STUDIO-JT (HEE)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1800px
+ * **************************************** */
+@media (max-width: 1800px){
+	.main-visual__title {margin-left: 0;}
+
+	.main-app .main-section__bg { width: 840rem; height: 787rem; }
+
+	.main-company__amount { margin-left: 150rem; }
+}
+
+
+
+/* **************************************** *
+ * 1600px
+ * **************************************** */
+@media (max-width: 1600px){
+
+	.main-app .main-section__bg { width: 720rem; height: 675rem; }
+}
+
+
+
+/* **************************************** *
+ * 1480px
+ * **************************************** */
+@media (max-width: 1480px){
+
+	.main-section__title {font-size: 48rem;}
+
+	.main-visual__title {font-size: 64rem;}
+
+	.main-app .main-section__inner {padding: 220rem 0;}
+	.main-app .main-section__bg { width: 720rem; height: 720rem; }
+
+	.main-company .main-section__content-inner {padding: 100rem 0 250rem;}
+	.main-company__head { padding-top: 120rem; }
+	.main-company__amount {padding-top: 120rem;}
+
+	.main-business__list-title {font-size: 56rem;}
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media (max-width: 1023px){
+
+	.main-section__title {font-size: 42rem;}
+	.main-section__desc {font-size: 24rem;}
+
+	.main-visual__content {position: absolute; bottom: 130rem; height: auto;}
+	.main-visual__content-inner {padding-top: 0; text-align: left;}
+	.main-visual__title {display: block; font-size: 56rem; left: 0;padding-top: 0;}
+
+	.main-app .main-section__inner {padding: 160rem 0 800rem;}
+
+	.main-company .main-section__inner {padding-bottom: 600rem;}
+	.main-company .main-section__bg {background-size: 200% auto; background-position: 10% 110%;}
+	.main-company .main-section__content-inner {padding: 160rem 0;}
+	.main-company__head { position: relative; top: auto; left: auto; padding-top: 0; width: 100%; }
+	.main-company__amount { display: block; width: 100%; left: auto; margin-left: 0; padding-top: 0; margin-top: 150rem;}
+	.main-company__amount-item {margin-bottom: 140rem;}
+	.main-company__amount-num b {font-size: 96rem;}
+	.main-company__amount-num > span {font-size: 82rem;}
+	.main-company__amount-item > p {font-size: 24rem;}
+	.main-company__amount-item > span {font-size: 16rem;}
+
+	.main-business__head-inner {padding: 160rem 0;}
+	.main-business__list-title {font-size: 48rem;}
+	.main-business__list-desc {font-size: 24rem;}
+}
+
+
+
+/* **************************************** *
+ * 860px
+ * **************************************** */
+@media (max-width: 860px){
+	.main-section__title {font-size: 36rem;}
+	.main-section__desc {font-size: 22rem; margin-top: 24rem;}
+	.main-section__btn {margin-top: 50rem;}
+
+	.main-visual__title {font-size: 42rem; line-height: 1.29;}
+	.main-visual__content {bottom: 80rem;}
+	.jt-vid-popup-btn {display: inline-block;}
+
+	.main-app .main-section__inner {padding: 120rem 0 520rem;}
+	.main-app .main-section__bg { width: 460rem; height: 460rem; }
+
+	.main-company .main-section__content-inner {padding: 120rem 0;}
+	.main-company .main-section__bg {background-position: 10% 110%;}
+	.main-company__amount-item {margin-bottom: 120rem;}
+	.main-company__amount-num {font-family: 'Pretendard', sans-serif;}
+	.main-company__amount-num b {font-size: 88rem;}
+	.main-company__amount-num b:before,
+	.main-company__amount-num b:after {height: 10rem;}
+	.main-company__amount-num > span {font-size: 75rem;}
+	.main-company__amount-item > p {font-size: 22rem;}
+	.main-company__amount-item > span {font-size: 15rem;}
+
+	.main-business__head-inner {padding: 150rem 0;}
+	.main-business__list-title {font-size: 44rem;}
+	.main-business__list-desc {font-size: 22rem; font-weight: 400; margin-top: 12rem;}
+	.main-business__picture:after {width: 100%; background: rgba(0,0,0,0.3);}
+
+	.main-culture .main-section__bg {background-attachment: unset;}
+
+	.main-recruit .main-section__bg {background-attachment: unset; background-image: none; background-color: #000;}
+}
+
+
+
+/* **************************************** *
+ * 540px
+ * **************************************** */
+@media (max-width: 540px){
+
+	.main-section__title {font-size: 26rem;}
+	.main-section__desc {font-size: 18rem; margin-top: 20rem;}
+	.main-section__btn-wrap {margin: 0;}
+	.main-section__btn {margin-top: 40rem; margin-left: 0; margin-right: 0;}
+
+	.main-visual__title {font-size: 36rem;}
+
+	.main-app .main-section__inner {padding: 80rem 0 420rem;}
+	.main-app .main-section__bg { width: 100%; height: auto; padding-top: 100%; }
+	.ios .main-app .main-section__bg:before { content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; -webkit-box-shadow: inset 5rem 5rem 15rem 0 #f2f2f2; box-shadow: inset 5rem 5rem 15rem 0 #f2f2f2; z-index: 1; }
+	.main-app .main-section__bg .jt-fullvid-container {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);}
+	.main-app .main-section__btn-wrap {margin-top: 40rem;}
+	.main-app .main-section__btn { min-width: 190rem; margin-top: 10rem; }
+	.main-app .main-section__btn:first-child {margin-top: 0;}
+
+	.main-company .main-section__inner {padding-bottom: 500rem;}
+	.main-company .main-section__bg { background-size: 250% auto; background-position: 15% 100%; }
+	.main-company .main-section__content-inner {padding: 80rem 0 0;}
+	.main-company__amount {margin-top: 94rem;}
+	.main-company__amount-item {margin-bottom: 90rem;}
+	.main-company__amount-item > p { font-size: 18rem; margin-top: 10rem; }
+	.main-company__amount-item > span { font-size: 13rem; margin-top: 2rem; }
+	.main-company__amount-num b { font-size: 72rem; }
+	.main-company__amount-num > span { font-size: 60rem; }
+
+	.main-business__head-inner {padding: 80rem 0 130rem; }
+	.main-business__list-title {font-size: 36rem;}
+	.main-business__list-desc {font-size: 18rem; margin-top: 10rem;}
+	.main-business__picture-item:nth-child(5) > span {background-position: 66% 50%;}
+}

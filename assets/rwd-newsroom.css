@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+ * File       : rwd-newsroom.css
+ * Author     : STUDIO-JT (HEE)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1480px
+ * **************************************** */
+@media (max-width: 1480px){
+
+	.newsroom-title {font-size: 20rem;}
+
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media (max-width: 1023px){
+
+	.page-template-newsroom .article-body {padding-bottom: 160rem;}
+
+	.newsroom-title {font-size: 18rem; margin-bottom: 18rem;}
+
+	.jt-newsroom-tab {margin-bottom: 45rem;}
+	.jt-newsroom-tab li a {font-size: 44rem; padding: 18rem 23rem;}
+
+}
+
+
+
+/* **************************************** *
+ * 860px
+ * **************************************** */
+@media (max-width: 860px){
+
+	.page-template-newsroom .article-body {padding-top: 80rem; padding-bottom: 120rem;}
+
+	.newsroom-title {font-size: 16rem; margin-bottom: 16rem;}
+
+	.jt-newsroom-tab li a {font-size: 36rem; padding: 12rem 20rem;}
+
+}
+
+
+
+/* **************************************** *
+ * 540px
+ * **************************************** */
+@media (max-width: 540px){
+
+	.page-template-newsroom .article-body {padding-top: 60rem; padding-bottom: 100rem;}
+
+	.newsroom-title {font-size: 14rem; margin-bottom: 12rem;}
+
+	.jt-newsroom-tab {margin-bottom: 40rem;}
+	.jt-newsroom-tab li:after {width: 4rem; height: 4rem; margin-top: -2rem;}
+	.jt-newsroom-tab li a { font-size: 24rem; padding: 10rem 9rem; }
+	.ios .jt-newsroom-tab li:after {margin-top: -3rem;}
+	html.desktop.mac .jt-newsroom-tab li:after {margin-top: -3rem;}
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*
+ * File       : modules/newsletter/style.css
+ * Author     : STUDIO-JT (CHAEHEE)
+ * Guideline  : JTstyle.1.1
+ *
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) JT NEWSLETTER LIST
+ * 2) RWD
+ */
+
+
+
+/* **************************************** *
+ * JT NEWSLETTER LIST
+ * **************************************** */
+.jt-newsletter-list-wrap {position: relative;}
+html.desktop .jt-newsletter-list-wrap .jt-press-list__link:hover .jt-press-list__thumb img {-webkit-transform: scale(1.05) rotate(0.1deg); -ms-transform: scale(1.05) rotate(0.1deg); transform: scale(1.05) rotate(0.1deg);}
